@@ -1,6 +1,6 @@
 # Beaver Menu Hamburger
 
-Beaver Menu Hamburger is an easy addon to replace the menu icon for the Beaver Builder Menu Module.
+Beaver Menu Hamburger is an easy addon to replace the menu icon for the Beaver Builder Menu Module with a CSS animated icon.
 
 It's based entirely on work done by Jonsuh: https://github.com/jonsuh/hamburgers
 
