@@ -10,7 +10,7 @@
  * Plugin Name: Beaver Menu Hamburger
  * Plugin URI:  https://www.badabing.nl
  * Description: Beaver Animated Menu Hamburger
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Badabingbreda
  * Author URI:  https://www.badabing.nl
  * Text Domain: menu-hamburger
@@ -34,7 +34,7 @@ if ( defined( 'ABSPATH' ) && ! defined( 'MENUHAMBURGER_VERION' ) ) {
     }
  }
 
-  define( 'MENUHAMBURGER_VERSION'   , '1.0.0' );
+  define( 'MENUHAMBURGER_VERSION'   , '1.0.1' );
   define( 'MENUHAMBURGER_DIR'     , plugin_dir_path( __FILE__ ) );
   define( 'MENUHAMBURGER_FILE'    , __FILE__ );
   define( 'MENUHAMBURGER_URL'     , plugins_url( '/', __FILE__ ) );

@@ -8,9 +8,11 @@
 // Hamburger
 // ==================================================
 .menu-hamburger {
-  --hamburger-layer-width : $hamburger-layer-width;
+  --hamburger-layer-width : #{$hamburger-layer-width};
+  --hamburger-layer-color : #{$hamburger-layer-color};
+  --hamburger-active-layer-color : #{$hamburger-active-layer-color};
 
-  padding: $hamburger-padding-y $hamburger-padding-x;
+  // padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
 
@@ -36,22 +38,6 @@
     }
   }
 
-  &.is-active {
-    &:hover {
-      @if $hamburger-hover-use-filter == true {
-        filter: $hamburger-active-hover-filter;
-      }
-      @else {
-        opacity: $hamburger-active-hover-opacity;
-      }
-    }
-
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-      background-color: $hamburger-active-layer-color;
-    }
-  }
 }
 
 .hamburger-box {
@@ -71,7 +57,7 @@
   &::after {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height;
-    background-color: $hamburger-layer-color;
+    background-color: var(--hamburger-layer-color);
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
@@ -93,3 +79,23 @@
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
 }
+
+#{$hamburger-selector} {
+  .menu-hamburger{
+    &:hover {
+      @if $hamburger-hover-use-filter == true {
+        filter: $hamburger-active-hover-filter;
+      }
+      @else {
+        opacity: $hamburger-active-hover-opacity;
+      }
+    }
+  
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: var(--hamburger-active-layer-color);
+    }
+  }
+}
+

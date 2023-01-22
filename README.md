@@ -30,3 +30,14 @@ You can select from the following effects:
 - 3dy
 - boring
 - minus
+
+## Changing the icon color
+
+Since the icon is pure CSS, you can easily change its color:
+
+    .menu-hamburger .hamburger-box {
+        --hamburger-layer-color: white;
+        --hamburger-active-layer-color : white;
+    }
+
+Uses `CSS vars` to change the color on all elements that use those variables. The default icon color is #000;
